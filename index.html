@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/pixelify-sans" rel="stylesheet">
 </head>
 <body>
-    
+    <h1 id="rps-title">Rock Paper Scissors</h1>
+    <div class="mainDisplay">
+        <div class="scoreboard">
+            <div class="scoreboardTitles">
+                <h3>Player</h3>
+                <h3>Computer</h3>
+            </div>
+            <div class="score">
+                <h3 id="player-score">0</h3>
+                <h3 id="computer-score">0</h3>
+            </div>
+        </div>
+        <div class="gameDisplay">
+            <div class="playerSelection">
+                <h3>You</h3>
+                <button class="playerBtn" id="rock">
+                    <img src="./images/rock.png"></button>
+                <button class="playerBtn" id="paper">
+                    <img src="images/paper.png"></button>
+                <button class="playerBtn" id="scissors">
+                    <img src="./images/scissors.png"></button>
+            </div>
+            <div class="computerSelection">
+                <h3>Computer</h3>
+                <img src="./images/rps.png" id="computer">
+            </div>
+        </div>
+    </div>
+    <div class="resultDisplay">
+        <h3 id="results">Make your choice.</h3>
+        <h3 id="results-description"></h3>
+    </div>
 </body>
 </html>

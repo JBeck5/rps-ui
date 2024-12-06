@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.mainDisplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 750px;
+}
+
+h3 {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 2rem;
+    color: #865acd;
+    margin: 0;
+}
+
+#rps-title {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    color: #865acd;
+    height: 58px;
+    width: 600px;
+    border: 1px solid #6a5acd;
+    margin-bottom: 20px;
+}
+
+.scoreboard {
+    border: 1px solid #6a5acd;
+}
+
+.scoreboardTitles,
+.score {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+img {
+    width: 60px;
+    width: 60px;
+    color: white;
+}
+
+.playerBtn,
+#computer {
+    width: 90px;
+    height: 90px;
+}
+
+#computer {
+    background-color: white;
+    border-radius: 2px;
+    border: gray solid 1px;
+}
+
+.playerBtn:hover {
+    cursor: pointer;
+    background-color: #5ab1cd;
+    border: 2px solid #3f7c90;
+    border-radius: 2px;
+    transform: translateX(4px);
+}
+
+.gameDisplay {
+    display: flex;
+    justify-content: space-between;
+}
+
+.playerSelection,
+.computerSelection {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 25px;
+}
+
+.computerSelection {
+    display: flex;
+    align-items: end;
+}
+
+.computerSelection h3 {
+    padding-bottom: 95px;
+}
+
+.resultDisplay {
+    padding-top: 10px;
+    text-align: center;
+}
